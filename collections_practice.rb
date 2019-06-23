@@ -36,5 +36,11 @@ end
 
 
 def add_s(array)
-    
+  array.collect do |single|
+    if array[1] == single
+      single
+    else 
+      single + "s"
+    end
+  end
 end
